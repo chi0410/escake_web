@@ -1,0 +1,131 @@
+@import url("reset.css");
+
+.main_pic{
+}
+
+.main_pic img{
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.product_info{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.product_info h1{
+    padding-bottom: 10px;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.product_info h2{
+    padding-bottom: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.product_info p{
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.product_info p::after{
+    content: "〉〉";
+    letter-spacing: -8px;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.book_cake{
+    width: 100%;
+
+}
+
+.book_cake .design_a{
+    display: block;
+    text-align: center;
+    /* border: 1px solid #000; */
+
+}
+
+.design_a img{
+    width: 70%;
+}
+
+.price_btn{
+    color: #5e5e5e;
+    text-align: center;
+    padding: 20px 0 20px 0px;
+}
+
+.cake_price span{
+    display: block;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #5e5e5e;
+
+}
+
+.atc_btn a{
+    display: block;
+    background-color: #CDC3A7;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.atc_btn i{
+    display: block;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+}
+
+.atc_btn i:hover{
+    color: #E72D2D;
+}
+
+.atc_btn{
+    padding: 40px 0;
+    border-bottom: 1px solid #5e5e5e ;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.package{
+    margin-top: 50px;
+}
+
+.package h1{
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #5e5e5e;
+}
+
+.package img{
+    margin: 20px auto;
+    display: block;
+    width: 60%;
+    /* text-align: center; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

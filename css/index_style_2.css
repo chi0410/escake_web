@@ -1,0 +1,597 @@
+@import url("reset.css");
+
+body{
+    /* max-width: 100%; */
+    font-family: didot;
+    line-height: 1.6;
+}
+
+/*------------輪播圖版位--------------*/
+
+.h_main{
+    background-image: url("../img/index_top.png");
+    width: 100%;
+    /* padding-bottom: 680px; 如果是680px要搭配bgsize:cover */
+    padding-bottom: 56.25%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    /* background-position: center center; */
+}
+
+.wrap{
+    max-width: 1920px;
+    display: flex; /*加了之後，最上面白白的會消失，但我不明白為什麼*/
+    justify-content: center;
+    position: relative;
+}
+
+
+/*------------top主選單--------------*/
+
+.top{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* flex-grow: 6; 這是原先使用分配方式 好像不正確 */
+    /* width: 50%; 這邊不要放 選單會變形 */
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    letter-spacing: 1px;
+}
+
+.top li{
+    margin: 30px;
+}
+
+.top li > a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo{
+    width: 80px;
+}
+
+/*------------all items 子選單-----------*/
+/*-------要跟著父層選單，但不知道要怎麼分開設定，所以加了很多
+class，雖然成功了，但不知道怎麼調整底色的寬度又不會讓文字排縮-----------------*/
+
+.ai_list{
+    background-color: #CDC3A7;
+    /* padding: 10px 0 10px 10px; */
+    align-content: center;
+    position: absolute;
+    left: 120px;
+    top: 105px;
+    display: none;
+}
+
+.ai_list .ai_li{
+    font-size: 14px;
+}
+
+li:hover .ai_list{
+    display: block;
+}
+
+.ai_li .ai_a{
+    display: block;
+    width: 90px;
+    text-decoration: none;
+    /* line-height: 2.8; */
+    color: #5e5e5e;
+}
+
+
+.ai_li .ai_a:hover{
+    color: #fff;
+    border-bottom: #fff;
+}
+
+.top .ft_red{
+    color: #E72D2D;
+    border: 1px solid #E72D2D;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+
+/*------------right主選單(會員)--------------*/
+
+.top_right{
+    display: flex;
+    align-items: center;
+    /* flex-grow: 4; 這是原先使用分配方式 好像不正確 */
+    position: absolute; /*這邊加入絕對定位讓top_right扶起來 才不會跟top打架*/
+    top:40px;
+    right: 30px;
+    position: fixed;
+}
+
+.top_right a{
+    text-decoration: none;
+    color: #fff;
+    margin:0 10px;
+}
+
+.top a:hover{
+    color: #CDC3A7;
+}
+
+.search{
+    /* margin-right: 20px; */
+    border-bottom: .25px solid #fff;
+    width: 90px;
+}
+
+/*------------左右兩側絕對定位的文字--------------*/
+
+.left_h1 {
+    color: #fff;
+    position: absolute;
+        left: 0px;
+        top: 370px;
+        letter-spacing: 7px;
+        line-height: 1;
+}
+
+.left_h1 h1{
+    font-size: 40px;
+}
+
+.left_h1 h1{
+    display: flex;
+    align-items: center;
+}
+
+.left_h1 h1::before{
+    content: "";
+    height: .5px;
+    background: #fff;
+    /* flex:1 0 auto; */
+    width: 200px;
+}
+.left_h1 p{
+    font-size: 14px;
+    padding-left: 280px;
+}
+
+.right_h2 {
+    color: #fff;
+    position: absolute;
+        left: 710px;
+        top: 410px;
+        letter-spacing: 7px;
+        line-height: 1.1;
+}
+
+.right_h2 h2{
+    font-size: 40px;
+}
+
+.right_h2 h2::after{
+    display: block;
+    content: "";
+    height: .5px;
+    background: #fff;
+    width: 195px;
+    position: absolute;
+    right: -155px;
+    top: 30px;
+}
+
+.right_h2 p{
+    font-size: 14px;
+    padding-left: 120px;
+}
+
+.right_h2 span{
+    font-size: 24px;
+}
+
+/*------------小吧檯 活動資訊--------------*/
+
+.messege{
+    background-color: #E72D2D;
+    max-width: 100%;
+    height: 28px;
+}
+.messege span{
+    color: #CDC3A7;
+    text-align: center;
+    letter-spacing: 5px;
+    display: block;
+    line-height: 28px;
+}
+
+/*------------about區 介紹品牌--------------*/
+
+.about{
+    background-image: url("../img/index_about_bg.png");
+    width: 100%;
+    height: 635px;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    background-image: url(../img/index_about.png);
+    width: 750px;
+    height: 439px;
+    background-size: cover;
+}
+
+article h1{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 60px;
+    letter-spacing: 6px;
+    color: #fff;
+}
+
+article p{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 30px;
+    letter-spacing: 6px;
+    color: #fff;
+    line-height: 22px;
+}
+
+/*------------商品搖滾區(文字)--------------*/
+
+.hot_items{
+    /* width: 1280px; */
+    text-align: center;
+    margin-top: 70px;
+}
+.number{
+    /* border: 1px solid #CDC3A7;
+    /* display: inline-block; */
+}
+
+.number-center{
+        margin-top: 35px;
+        color: #CDC3A7;
+        width: 30px;
+        height: 30px;
+        margin:auto;
+        line-height: 30px;
+        font-size: 25px;
+        border: 1.5px solid #CDC3A7;
+        border-radius: 10px; 
+
+        /* display: inline-block; */
+        /* border-radius: 20px; */
+
+}
+
+.i_name{
+    color: #5e5e5e;
+    margin-top: 15px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.hot_items p{
+    color: #5e5e5e;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+/*------------商品搖滾區(圖片)--------------*/
+
+.item_look{
+    background-image: url("../img/wood1.png");
+    max-width: auto;
+    background-size: cover;
+    position: relative;
+    /* border: 1px solid #5e5e5e; */
+    overflow: hidden;
+    margin-bottom: 250px;
+}
+
+.item_look .spot{
+    width: 100%;
+    display: block;
+}
+
+.berrycup{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*---------------莓果視覺畫面--------------*/
+
+.visual_made{
+    width: 100%;
+    margin-top: 150px;
+    color: #5e5e5e;
+    position: relative;
+}
+
+.visual_made h1{
+    font-size: 42px;
+    letter-spacing: 5px;
+    opacity: 0.9;
+}
+
+.visual_made p{
+    font-size: 12px;
+    letter-spacing: 15px;
+}
+
+.visual_made_wrap{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.close-up{
+    width: 220px;
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+.medium-shot{
+    width: 170px;
+    position: absolute;
+    left: 350px;
+    top: -160px;
+}
+
+.long-shot{
+    width: 130px;
+    position: absolute;
+    left: 770px;
+    top: 0;
+}
+
+.visual img{
+    margin-top: 70px;
+    width: 100%; /*這邊使用這個瞬間就沒有橫向卷軸了，之前max auto甚麼都試過了，但這個成功了，雖然我不知道原因...*/
+    display: block;
+}
+
+/*---------------客製步驟文字部分--------------*/
+
+.ownmade{
+    margin: 0 auto;
+    /* border: 1px solid #5e5e5e; */
+    padding: 70px 100px;
+    color: #5e5e5e;
+}
+
+.ownmade ul{
+    display: flex;
+}
+
+.ownmade li{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.ownmade h1>span{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.ownmade h1 :nth-child(2){
+    font-size: 45px;
+    font-style: normal;
+}
+
+.ownmade h1{
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+.page_name{
+    display: flex;
+    text-align: right;
+}
+
+.page_name p{
+    flex-basis: 0;
+    flex-grow: 1;
+    border-bottom: 1px solid #5e5e5e;
+    margin: 0 80px;
+}
+
+
+/*---------------------客製蛋糕步驟-1---------------------*/
+
+
+.design_cake{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    /* margin: 0 auto; */
+    align-items: center;
+    font-size: 17px;
+    /*letter-spacing: 3px; 字距暫時不能加，因為不會做線段再choose的前後*/
+    color: #5e5e5e;
+}
+
+.design_cake h1{
+    /* transform: rotate(deg90);
+    display: block; */
+}
+
+.design_cake img{
+    width: 40%;
+    padding-left: 50px;
+}
+.design_cake section{
+    display: flex;
+    position: relative;
+}
+.theme1{
+    align-items: center;
+}
+
+section .step_1::before{
+    /* float: left; */
+    text-align: center;
+    content: "_________CHOOSE___";
+    background-color: #CDC3A7;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    transform: rotate(-90deg);
+    border-radius: 0 10px 0 0;
+    text-align: right;
+    padding-right: 20px;
+    position: absolute;
+    left: -110px;
+    top: 80px;
+}
+
+section .step_1{
+    /* padding-left: 80px; */
+    margin-right: 80px;
+    /* flex-grow: 1; */
+    text-align: left;
+    /* border: 1px solid #E72D2D; */
+}
+
+.step_1 p{
+    line-height: 2;
+    padding: 10px 0;
+}
+
+.step_1 span{
+    font-size: 12px;
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 3px;
+}
+
+.step_1 span:nth-child(3){
+    border-bottom:1px solid #CDC3A7;
+}
+
+
+/*---------------------客製蛋糕步驟-2---------------------*/
+
+
+.design_cake2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
+    color: #5e5e5e;
+}
+
+.design_cake2 img{
+    order: -1;
+    margin-right: 110px;
+    width: 45%;
+}
+
+section .step_2{
+    text-align: left;
+}
+
+.step_2 p{
+    line-height: 2;
+    padding: 10px 0;
+}
+
+.step_2 span{
+    font-size: 12px;
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #CDC3A7;
+}
+
+.step_2::before{
+    content: "____MAKEUP_______";
+    color: #fff;
+    display: block;
+    width: 166px;
+    height: 30px;
+    background-color: #CDC3A7;
+    border-radius: 10px 0 0 0;
+}
+
+
+/*---------------------客製蛋糕步驟-3---------------------*/
+
+
+.design_cake3{
+    padding: 0 0 0 200px;
+    position: relative;
+}
+
+.design_cake3 .step_3{
+    /* border: 1px solid #5e5e5e; */
+    margin: 50px 0 50px 300px;
+    text-align: left;
+}
+
+.step_3::before{
+    content: "_______DESIGN___";
+    display: block;
+    background-color: #CDC3A7;
+    height: 30px;
+    width: 140px;
+    color: #fff;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 404px;
+    top: 90px;
+    border-radius: 0 10px 0 0;
+}
+
+.step_3 p{
+    line-height: 2;
+    padding: 10px 0;
+}
+
+.step_3 span{
+    font-size: 12px;
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 3px;
+}
+
+.step_3 span:nth-child(3){
+    border-bottom: 1px solid #CDC3A7;
+    width: 330px;
+}
+
+/* .design_cake3 img{
+    margin: 0 auto;
+} */
+
+.footer_bg .cupcake_f{
+    width: 100%;
+    text-align: center;
+}
+
+.create{
+    display: block;
+    background-color: #E72D2D;
+    color: #CDC3A7;
+    width: 90px;
+    line-height: 2;
+    text-align: center;
+    margin: 100px auto 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}

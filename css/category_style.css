@@ -1,0 +1,289 @@
+/*------------category 分類頁面------------*/
+@import url("reset.css");
+
+/*----------------蛋糕商品-1--------------*/
+
+.cake_product{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 70px 100px;
+    color: #5e5e5e;
+    font-family: didot;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.pic{
+    width: 50%;
+    flex-direction: column;
+}
+
+.pic span{
+    font-size: 14px;
+}
+
+.pic img{
+    width: 450px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.cake_info{
+    width: 50%;
+    padding-right: 110px;
+    padding-top: 130px;
+}
+
+.cake_info h1{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cake_info h2{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.cake_info p{
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+
+.cake_info span{
+    color: #E72D2D;
+}
+
+.cake_info a{
+    display: block;
+    background-color: #E72D2D;
+    color: #CDC3A7;
+    width: 90px;
+    line-height: 2;
+    text-align: center;
+    margin-left: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+/*----------------蛋糕商品-2--------------*/
+
+.cake_product2{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 70px 100px;
+    color: #5e5e5e;
+    font-family: didot;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.pic2{
+    width: 50%;
+    flex-direction: column;
+    order: 2;
+    margin-right: 200px;
+}
+
+.pic2 span{
+    font-size: 14px;
+}
+
+.pic2 img{
+    width: 450px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.cake_info2{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 130px;
+}
+
+.cake_info2 h1{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cake_info2 h2{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.cake_info2 p{
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+
+.cake_info2 span{
+    color: #E72D2D;
+}
+
+.cake_info2 a{
+    display: block;
+    background-color: #E72D2D;
+    color: #CDC3A7;
+    width: 90px;
+    line-height: 2;
+    text-align: center;
+    margin-left: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+/*----------------蛋糕商品-3--------------*/
+
+.cake_product3{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 70px 100px;
+    color: #5e5e5e;
+    font-family: didot;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.pic3{
+    width: 50%;
+    flex-direction: column;
+}
+
+.pic3 span{
+    font-size: 14px;
+}
+
+.pic3 img{
+    width: 450px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.cake_info3{
+    width: 50%;
+    padding-right: 110px;
+    padding-top: 130px;
+}
+
+.cake_info3 h1{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cake_info3 h2{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.cake_info3 p{
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+
+.cake_info3 span{
+    color: #E72D2D;
+}
+
+.cake_info3 a{
+    display: block;
+    background-color: #E72D2D;
+    color: #CDC3A7;
+    width: 90px;
+    line-height: 2;
+    text-align: center;
+    margin-left: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+/*----------------蛋糕商品-4--------------*/
+
+.cake_product4{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 70px 100px;
+    color: #5e5e5e;
+    font-family: didot;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+.pic4{
+    width: 50%;
+    flex-direction: column;
+    order: 2;
+    margin-right: 200px;
+}
+
+.pic4 span{
+    font-size: 14px;
+}
+
+.pic4 img{
+    width: 450px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+.cake_info4{
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 130px;
+}
+
+.cake_info4 h1{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cake_info4 h2{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.cake_info4 p{
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+
+.cake_info4 span{
+    color: #E72D2D;
+}
+
+.cake_info4 a{
+    display: block;
+    background-color: #E72D2D;
+    color: #CDC3A7;
+    width: 90px;
+    line-height: 2;
+    text-align: center;
+    margin-left: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
