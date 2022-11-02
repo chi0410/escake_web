@@ -208,7 +208,7 @@ body{
 
 .notice1 span{
     display: block;
-    background-color: #DFB588;
+    background-color: #CDC3A7;
     line-height: 1.6;
     
     padding-left: 5px;
@@ -257,7 +257,7 @@ body{
 
 .notice2 span{
     display: block;
-    background-color: #DFB588;
+    background-color: #CDC3A7;
     line-height: 1.6;
     padding-left: 5px;
     padding-right: 5px;
@@ -280,7 +280,7 @@ body{
 .more_cake a{
     text-decoration: none;
     padding-top: 20px;
-    color: #DFB588;
+    color: #CDC3A7;
 }
 
 .more_cake .add_i i{
@@ -401,6 +401,11 @@ body{
     text-decoration: none;
     border-radius: 5px;
     letter-spacing: 1px;
+}
+
+.s_btn:hover{
+    background-color: #5e5e5e;
+    color: #CDC3A7;
 }
 
 .add_product .btn_r{

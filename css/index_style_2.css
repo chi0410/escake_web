@@ -32,6 +32,7 @@ body{
 
 .top{
     margin-top: 20px;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -94,11 +95,24 @@ li:hover .ai_list{
 }
 
 .top .ft_red{
+    font-size: 14px;
+    letter-spacing: 2px;
+    height: 25px;
+    line-height: 25px;
     color: #E72D2D;
     border: 1px solid #E72D2D;
     border-radius: 5px;
     width: 80px;
     text-align: center;
+}
+
+.top .ft_red:hover{
+    color: #CDC3A7;
+    background-color: #E72D2D;
+    border: 0;
+    /* border-radius: 5px;
+    width: 80px;
+    text-align: center; */
 }
 
 
@@ -379,6 +393,7 @@ article p{
 .ownmade li{
     flex-basis: 0;
     flex-grow: 1;
+    padding-left: 75px;
 }
 
 .ownmade h1>span{
@@ -406,7 +421,7 @@ article p{
     flex-basis: 0;
     flex-grow: 1;
     border-bottom: 1px solid #5e5e5e;
-    margin: 0 80px;
+    margin: 0 100px;
 }
 
 
@@ -469,13 +484,17 @@ section .step_1{
 .step_1 p{
     line-height: 2;
     padding: 10px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .step_1 span{
     font-size: 12px;
     display: block;
-    line-height: 1.2;
-    letter-spacing: 3px;
+    /* line-height: 1.2; */
+    letter-spacing: 2px;
+    line-height: 1.6;
+    color: #CDC3A7;
 }
 
 .step_1 span:nth-child(3){
@@ -508,14 +527,17 @@ section .step_2{
 .step_2 p{
     line-height: 2;
     padding: 10px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .step_2 span{
     font-size: 12px;
     display: block;
-    line-height: 1.2;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 1.6;
     border-bottom: 1px solid #CDC3A7;
+    color: #CDC3A7;
 }
 
 .step_2::before{
@@ -560,13 +582,16 @@ section .step_2{
 .step_3 p{
     line-height: 2;
     padding: 10px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .step_3 span{
     font-size: 12px;
     display: block;
-    line-height: 1.2;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    color: #CDC3A7;
 }
 
 .step_3 span:nth-child(3){
@@ -594,4 +619,9 @@ section .step_2{
     text-decoration: none;
     border-radius: 5px;
     letter-spacing: 1px;
+}
+
+.create:hover{
+    background-color: #CDC3A7;
+    color: #fff;
 }

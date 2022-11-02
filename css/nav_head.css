@@ -81,7 +81,16 @@
     background-color:#E72D2D;
     padding: 3px;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.nav_right .ft_red:hover{
+    color: #fff;
+    background-color:#5e5e5e;
+    /* padding: 3px;
+    border-radius: 5px;
+    font-size: 13px; */
 }
 
 .nv_list{
