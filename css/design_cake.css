@@ -1,40 +1,5 @@
 @import url("reset.css");
 
-body{
-    font-family: didot;
-    line-height: 1.6;
-}
-
-.cake_box{
-    background-image: url("../img/designCake/design_bgt.png");
-    width: 100%;
-    padding-bottom: 56.25%;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.c_size{
-    width: 70%;
-    margin-top: 90px;
-    color: #5e5e5e;
-
-}
-
-.c_size p{
-    font-size: 26px;
-    border-bottom: 1px solid #5e5e5e;
-    padding-bottom: 5px;
-}
-
-.c_size .inch{
-    
-}
-
-
 
 
 

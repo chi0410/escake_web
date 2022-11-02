@@ -1,5 +1,10 @@
 @import url("reset.css");
 
+body{
+    font-family: didot;
+    line-height: 1.6;
+}
+
 .main_pic{
 }
 
@@ -42,7 +47,7 @@
 
 .book_cake{
     width: 100%;
-
+    padding-bottom: 20px;
 }
 
 .book_cake .design_a{
@@ -77,6 +82,7 @@
     height: 40px;
     margin: 0 auto;
     border-radius: 50%;
+    text-decoration: none;
 }
 
 .atc_btn i{
@@ -116,9 +122,324 @@
 }
 
 
+/*-----------------彈出選單------------------*/
+
+.cake_design{
+    /* display: none; */
+    max-width: 960px;
+    margin: 0 auto;
+}
 
 
 
+.cake_box{
+    /* background-image: url("../img/designCake/design_bgt.png"); */
+    background-image: url("../img/designCake/design_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f2eee6;
+    border-radius: 10px;
+    width: 65%; /*624px*/
+    /* height: auto; */
+    /* height: 100vh; */
+    margin: 0 auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.c_size{
+    width:80%;
+    color: #5e5e5e;
+    margin: 0 auto;
+}
+
+.inch_home{
+    margin: 0 auto;
+}
+
+.c_size p{
+    font-size: 20px;
+    border-bottom: 1px solid #5e5e5e;
+    display: flex;
+    letter-spacing: 2px;
+}
+.c_size .inch{
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 5px;
+    /* width: 50px; */
+}
+
+.fruit_home{
+    /* width: 600px; */
+    margin: 0 auto;
+}
+
+.c_makeup{
+    width: 80%;
+    color: #5e5e5e;
+    margin: 30px auto;
+}
+
+.c_makeup p{
+    /* width: 600px; */
+    margin: 0 auto;
+    font-size: 20px;
+    border-bottom: 1px solid #5e5e5e;
+    display: flex;
+    letter-spacing: 2px;
+}
+.c_makeup .fruits{
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.notice1{
+    /* padding: 20px; */
+    width: 80%;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 5px;
+    letter-spacing: 2px;
+    display: flex;
+}
+
+.notice1 span{
+    display: block;
+    background-color: #DFB588;
+    line-height: 1.6;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.design_home{
+    width: 120%;
+    margin: 0 auto;
+}
+
+.c_design{
+    width: 80%;
+    margin: 0 auto;
+    color: #5e5e5e;
+    margin-top: 10px;
+}
+
+.c_design p{
+    /* width: 600px; */
+    margin: 0 auto;
+    font-size: 20px;
+    border-bottom: 1px solid #5e5e5e;
+    display: flex;
+    letter-spacing: 2px;
+}
+
+.c_design .taste{
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.notice2{
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 5px;
+    letter-spacing: 2px;
+    display: flex;
+}
+
+.notice2 span{
+    display: block;
+    background-color: #DFB588;
+    line-height: 1.6;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.more_cake{
+    color: #5e5e5e;
+    width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.add_i{
+    color: #5e5e5e;
+    margin-bottom: 30px;
+}
+.more_cake a{
+    text-decoration: none;
+    padding-top: 20px;
+    color: #DFB588;
+}
+
+.more_cake .add_i i{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.more_cake h2{
+    border-bottom:1px solid #5e5e5e;
+    width: 100px;    
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+.add_more{
+    width: 90%;
+    margin: 0 auto;
+    color: #5e5e5e;
+    position: relative;
+}
+
+.add_title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    /* display: flex; */
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.add_product{
+}
+
+.add_product ul{
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.add_name{
+    display: flex;
+    justify-content: space-around;
+}
+.add_name span{
+    margin-top: 5px;
+    display: block;
+    flex-direction: row;
+}
+
+.add_name span:first-child{
+    letter-spacing: 2px;
+}
+
+.add_name span:nth-child(2){
+    letter-spacing: 1px;
+}
+
+.add_num{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    float: left;
+    padding-left: 5px;
+}
+
+.add_product ul img{
+    display: block;
+    width: 100%; /*100%才能把文字擠下去*/
+}
+
+.add_product li{
+    margin-right: 10px;
+    flex-shrink: 0;
+    /* box-sizing: border-box; */
+}
+
+.add_btn{
+    padding-right: 5px;
+    float: right;
+    margin-top: 10px;
+}
+
+.add_btn a{
+    font-size: 8px;
+    display: block;
+    background-color: #5e5e5e;
+    color: #CDC3A7;
+    width: 50px;
+    line-height: 2;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.save_btn{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.s_btn{
+    font-size: 14px;
+    display: block;
+    background-color: #E72D2D;
+    color: #CDC3A7;
+    width: 60px;
+    line-height: 2;
+    text-align: center;
+    margin: 50px auto 0;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.add_product .btn_r{
+    background: none;
+    border: 0;
+    color: #CDC3A7;
+    position: absolute;
+    left: -27px;
+    top: 140px;
+}
+
+.add_product .btn_l{
+    background: none;
+    border: 0;
+    color: #CDC3A7;
+    position: absolute;
+    right: -27px;
+    top: 140px;
+}
+
+.num_btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 30px; */
+    /* background-color: red; */
+}
+
+
+
+
+
+
+/*------暫時用不到------*/
+.own_cake_btn{
+        color: #5e5e5e;
+        text-align: center;
+        padding: 20px 0 20px 0px;
+}
 
 
 
