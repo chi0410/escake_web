@@ -2,12 +2,21 @@
 @import url(../css/reset.css);
 @media screen and (max-width: 414px) {
 
+a{
+    text-decoration: none;
+}
+
+body{
+}
+
 .main{
     background-image: url("../img_rwd/index_rwd/indexnav-RWD.png");
     width: 100%;
     background-size: contain;
     height: 94.25vh;
     position: relative;
+    overflow: hidden;
+
 }
 
 .wrap{
@@ -414,7 +423,57 @@ div.gopurchase .purchasebtn::after{
 }
 
 .bar_text_rwd{
-    display: block;
+    /* width: 200%; */
+    display:block;
+    background-color: #744343;
+    /* width: 300px; */
+    /* border: 3px solid red;    */
+}
+
+.bar_text_rwd div{
+    /* width: 70%; */
+    /* width: 500px; */
+    /* height: 300px; */
+    border: solid red;
+    overflow: hidden;
+
+    /* display: inline-block; */
+}
+
+#horse{
+    /* display: block;
+    width: 3000px;
+    height: 3000px;
+    background-color: red;
+    border: solid red 3px;
+    z-index: 9999; */
+}
+
+.bar_text_rwd a{
+    color: #CDC3A7;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    right: -100%;
+	animation: news 10s linear infinite;
+}
+
+@keyframes news{
+    0%{
+        right: -100%;
+    }
+    100%{
+        /* right: 20%; */
+        right: 100%;
+    }
+}
+
+.bar_text_rwd a{
+    animation-iteration-count:infinite;
+}
+
+.bar_text_rwd{
+    /* display: block;
     border: 2px solid #fff;
     position: relative;
     font-family: didot;
@@ -422,43 +481,60 @@ div.gopurchase .purchasebtn::after{
     top: 45px;
     right: -125px;
     letter-spacing: 2px;
-    position: absolute;
+    position: absolute; */
     /* right: -110%;
     top: 40px; */
-    position: fixed;
-	animation: news 10s linear infinite;
+    /* position: fixed;
+	animation: news 10s linear infinite; */
 
     /* animation: news 5s 2s ease-out backwards; */
 }
 
+.bar_text_rwd{
+    /* list-style-type: none;
+    background-color: #744343;
+    border: 2px solid #E72D2D;
+    position: absolute;
+    top: 40px; */
+    /* right: -100%; */
+    /* right: -20%;
+    width: 380px; */
+}
+
+.bar_text_rwd li{
+    /* width: 100%;
+    overflow: hidden; */
+
+}
+
 .bar_text_rwd a{
-    display: inline-block;
-    width: 210%;
+    /* display: inline-block; */
+    /* width: 210%;
     overflow: hidden;
-    border: 2px solid red;
-    height: 25px;
-    text-decoration: none;
-    color: #CDC3A7;
+    border: 2px solid red; */
+    /* height: 25px; */
+    /* text-decoration: none;
+    color: #CDC3A7; */
 
     /* height: 100px; */
-    /* position: absolute;
-    right: -7%;
+    /* position: absolute; */
+    /* right: 0;
     left: 157px; */
     /* width: 300px; */
+    /* animation: news 5s linear infinite;
+    overflow: hidden; */
+
 }
 
-@keyframes news{
+/* @keyframes news{
     0%{
-        right: -110%;
+        right: -100%;
     }
     100%{
-        right: 20%;
+        right: 50%;
     }
-}
+} */
 
-.bar_text_rwd a{
-    /* animation-iteration-count:infinite; */
-}
 .bar_text_rwd span{
     color: #fff;
 }
@@ -491,7 +567,7 @@ div.gopurchase .purchasebtn::after{
 }
 
 .ft_berry_rwd{
-background-image: url(../img_rwd/index_rwd/ft_berrymay.png);
+background-image: url("../img_rwd/index_rwd/ft_berrymay.png");
     width: 100%;
     height: 39vh;
     background-repeat: no-repeat;
@@ -596,13 +672,20 @@ background-image: url(../img_rwd/index_rwd/ft_berrymay.png);
     font-size: 12px;
     letter-spacing: 3px;
     z-index: 105;
+
 }
 
 .close-up{
     width: 22%;
     left: 0;
     top: 20px;
+    /* transition: all 1.5s;
+    transform: translateX(0px); */
 }
+
+/* .close-up:hover{
+    transform: translateX(100px);
+} */
 
 .medium-shot{
     width: 60%;
@@ -633,7 +716,7 @@ background-image: url(../img_rwd/index_rwd/ft_berrymay.png);
 
 
 
-
+}
 
 
 
