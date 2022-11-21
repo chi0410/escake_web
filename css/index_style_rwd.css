@@ -1,0 +1,690 @@
+/*-------- RWD --------- RWD --------- RWD --------*/
+@import url(../css/reset.css);
+@media screen and (max-width: 414px) {
+
+.main{
+    background-image: url("../img_rwd/index_rwd/indexnav-RWD.png");
+    width: 100%;
+    background-size: contain;
+    height: 94.25vh;
+    position: relative;
+}
+
+.wrap{
+    display: flex;
+    justify-content: unset;
+}
+
+.wrap .rwd_logo{
+    background-position: top left;
+    background-size: contain;
+    width: 75px;
+    height: 106px;
+    z-index: 111;
+    padding-top: 20px;
+    margin-left: 20px;
+    display: block;
+    position: fixed;
+    z-index: 111;
+}
+
+.wrap .ham{
+    display: block;
+}
+
+.wrap .wrap_rwd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    z-index: 111;
+}
+
+.wrap .rwd_search{
+    display: block;
+}
+
+.wrap .rwd_cart{
+    display: block;
+    margin-left: 20px;
+}
+
+.top_center{
+    display: none;
+}
+
+.top_right{
+    display: none;
+}
+
+.slogan{
+    display: none;
+}
+
+.slogan_ch{
+    display: none;
+}
+
+/*--------------  rwd漢堡選單  --------------*/
+
+/* transition: .5s ease-in;
+}
+.addcart.active{
+    right:0%;
+} */
+
+.burger{
+    display: block;
+    background-color: #E72D2D;
+    top: 125px;
+    /* right: 0; */
+    padding-top: 10px;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    right:-100%;
+    transition: .5s ease-in;
+    z-index: 200;
+    position: fixed;
+
+}
+
+/* .overfloat{
+    overflow: hidden;
+} */
+
+/* 打開選單JS */
+.burger.-on{
+    right: 0%;
+}
+
+.burger li{
+    list-style-type: none;
+    width: 300px;
+    border-radius: 20px 0 0 20px;
+}
+
+.burger li .burger_pd{
+    flex-direction: column;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.burger li .burger_pd_ft{
+    display: block;
+    color: #CDC3A7;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border: 2px solid #CDC3A7;
+    width: 80px;
+    line-height: 25px;
+    border-radius: 5px;
+}
+
+.burger li .burger_qa{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 20px; 
+}
+
+.burger li .burger_brand{
+    flex-direction: column;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 20px; 
+}
+
+.burger li .burger_social{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 10px; 
+}
+
+.burger li .burger_user1{
+    flex-direction: column;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 45px;
+    margin-left: 20px; 
+}
+
+.burger li .burger_user2{
+    flex-direction: column;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    margin-left: 20px; 
+}
+
+.burger li .burger_li{
+    color: #E72D2D;
+    text-decoration: none;
+    background-color:#CDC3A7 ;
+    display: block;
+    width: 250px;
+    line-height: 40px;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    letter-spacing: 14px;
+}
+
+.burger li .burger_li::after{
+    content: "";
+    position: absolute;
+    background:#CDC3A7;
+    width: 250px;
+    height: 1px;
+    top: 95.5%;
+    right: 8%;
+}
+
+/*----------     rwd品牌文案     ----------*/
+
+.slogan_rwd{
+    display: block;
+    position: relative;
+    margin-top: 240px;
+    font-size: 50px;
+    color: #CDC3A7;
+    text-shadow: 0 0 1.5px rgba(94, 94, 94, 1);
+}
+
+.slogan_rwd h1{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
+.slogan_rwd h2{
+    display: flex;
+    justify-content: flex-start;
+    height: 63px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+}
+
+.slogan_rwd h2 span{
+    font-size: 15px;
+    align-self: flex-end;
+
+}
+
+.slogan_rwd h1::before{
+    content: "";
+    height: 1px;
+    background: #CDC3A7;
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 39px;
+}
+
+.slogan_rwd h2::after{
+    content: "";
+    height: 1px;
+    background: #CDC3A7;
+    width: 107px;
+    position: absolute;
+    left: 307px;
+    top: 90px;
+}
+
+/*----------     rwd按鈕     ----------*/
+
+.readmore a{
+    margin-top: 150px;
+    line-height: 40px;
+    background-color: #744343;
+}
+
+.readmore a::after{
+    background: #744343;
+    height: 1.5px;
+}
+
+.readmore a::after{
+    position: absolute;
+    left: 50%;
+    top: 43px;
+    transform: translate(-50%,0);
+    content: "";
+    height: 1px;
+    background: #744343;
+    width: 107px;
+}
+
+/*----------     加入購物車明細表     ----------*/
+
+.addcart{
+    display: block;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    width: 320px;
+    z-index: 111;
+}
+
+.addpd{
+    font-size: 12px;
+}
+
+.addcart img{
+    /* margin-right: 10px;
+    border-radius: 0 20px 0 0; */
+}
+
+.addcart li{
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-top: 40px;
+    border-bottom: 1px solid #fff;
+    width: auto;
+}
+
+.addcart ul{
+    display: flex;
+    color: #fff;
+    margin-top: 30px;
+    /* border-bottom: 1px solid #fff; */
+    width: 280px;
+    margin-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+    /* box-sizing: border-box; */
+
+    position: relative;
+}
+
+.addcart ul::after{
+    width: 280px;
+    left: 0;
+}
+
+.addpd{
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.adddetail_1{
+    margin-right: 10px;
+    padding-left: 0 ;
+}
+
+.adddetail{
+    display: flex;
+    align-items: center;
+}
+
+.addedit{
+    text-align: right;
+    width: 100%;
+}
+
+.addedit a{
+    font-size: 14px;
+    /* margin-left: 5px; */
+    margin-right: 0;
+}
+
+.adddetail_1 h4{
+    margin-bottom: 10px;
+}
+
+.adddetail_2 .p_add3{
+    margin-bottom: 10px;
+}
+
+div.gopurchase{
+    margin-top: 228px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+div.gopurchase .purchasebtn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 14px;
+    border-radius: 5px;
+    line-height: 30px;
+    height: 30px;
+    color: #CDC3A7;
+    background: #744343;
+    width: 280px;
+    position: relative;
+    border:none;
+}
+
+div.gopurchase .purchasebtn::after{
+    content: "";
+    width: 280px;
+    height: 1px;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    background-color: #744343;
+}
+
+/*----------     小吧檯 活動資訊     ----------*/
+
+.bar_text{
+    display: none;
+    position: relative;
+}
+
+.bar_text_rwd{
+    display: block;
+    border: 2px solid #fff;
+    position: relative;
+    font-family: didot;
+    font-size: 16px;
+    top: 45px;
+    right: -125px;
+    letter-spacing: 2px;
+    position: absolute;
+    /* right: -110%;
+    top: 40px; */
+    position: fixed;
+	animation: news 10s linear infinite;
+
+    /* animation: news 5s 2s ease-out backwards; */
+}
+
+.bar_text_rwd a{
+    display: inline-block;
+    width: 210%;
+    overflow: hidden;
+    border: 2px solid red;
+    height: 25px;
+    text-decoration: none;
+    color: #CDC3A7;
+
+    /* height: 100px; */
+    /* position: absolute;
+    right: -7%;
+    left: 157px; */
+    /* width: 300px; */
+}
+
+@keyframes news{
+    0%{
+        right: -110%;
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.bar_text_rwd a{
+    /* animation-iteration-count:infinite; */
+}
+.bar_text_rwd span{
+    color: #fff;
+}
+
+.home_bar_rwd{
+    display: block;
+    position: relative;
+    position: absolute;
+    top: 694px;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 111;
+}
+
+/*--------------  熱銷搖滾區(圖片)  --------------*/
+
+.hot_items{
+    display: none;
+}
+
+.item_look{
+    background-image: url("../img_rwd/index_rwd/wood_spot.png");
+    width: 100%;
+    height: 39vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 0;
+}
+
+.ft_berry_rwd{
+background-image: url(../img_rwd/index_rwd/ft_berrymay.png);
+    width: 100%;
+    height: 39vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.ft_berry_rwd .number_rwd{
+    margin-left: 20px;
+    margin-top: 35px;
+    color: #CDC3A7;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    /* margin:auto; */
+    line-height: 30px;
+    font-size: 25px;
+    border: 1.5px solid #CDC3A7;
+    border-radius: 10px;
+    position: relative; 
+}
+
+.ft_berry_rwd .number_rwd::before{
+    content: "";
+    width: 1px;
+    height: 70px;
+    background: #CDC3A7;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.ft_berry_rwd .i_name_rwd{
+    color: #5e5e5e;
+    margin-top: 15px;
+    font-size: 28px;
+    letter-spacing: 5px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.ft_berry_rwd .i_name_rwd::after{
+    content: "莓莓緒杯『聯名款』";
+    position: relative;
+    position: absolute;
+    top: 80px;
+    left: 63px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.ft_berry_rwd .i_name_rwd span{
+    font-size: 58px;
+    line-height: 58px;
+}
+
+.ft_berry_rwd p{
+    font-size: 10px;
+    background-color: #CDC3A7;
+    color: #fff;
+    padding:2px;
+    width: 118px;
+    line-height: 14px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+
+.item_look .hot_items_rwd{
+    display: block;
+}
+
+.item_look .spot{
+    display: none;
+}
+
+.berrycup{
+    display: none;
+}
+
+.berrycup_rwd{
+    display: block;
+}
+
+.btn{
+    display: none;
+}
+
+.visual_made{
+    width: 100%;
+    margin-top: 180px;
+}
+
+.visual_made h1{
+    font-size: 28px;
+    letter-spacing: 5px;
+    z-index: 105;
+}
+
+.visual_made p{
+    font-size: 12px;
+    letter-spacing: 3px;
+    z-index: 105;
+}
+
+.close-up{
+    width: 22%;
+    left: 0;
+    top: 20px;
+}
+
+.medium-shot{
+    width: 60%;
+    left: -70px;
+    bottom: 105px;
+}
+
+.long-shot{
+    width: 40%;
+    right: -85px;
+    top: -40px;
+}
+
+.visual_cake_rwd{
+    display: block;
+    /* width: 100%; */
+    width: 414px;
+}
+
+.footer_red{
+    display: none;
+}
+
+.footer_bg{
+    margin: 0;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

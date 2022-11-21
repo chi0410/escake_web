@@ -1,0 +1,743 @@
+@import url("reset.css");
+@import url("footer.css");
+body{
+    font-family: didot;
+    line-height: 1.6;
+}
+
+/*------------輪播圖版位--------------*/
+
+.main{
+    width: 100%;
+    /* background-attachment: fixed; */
+    background-image: url(../img/index/index_top.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    height: 46.36vw;
+    /* background-position: center top; */
+    /* padding-bottom: 100%; */
+    /* padding-bottom: 56.25%; */
+}
+
+.wrap{}
+
+/*------------主選單 - 中間--------------*/
+
+.wrap .ham{
+    background-color: #E72D2D;
+    width: 50px;
+    height: 45px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 25px 0 0 0;
+    display: none;
+    margin-left: 20px;
+}
+
+.wrap .rwd_logo{
+    display: none;
+}
+
+.wrap .rwd_cart{
+    display: none;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.wrap .rwd_search{
+    display: none;
+    color: #fff;
+    font-size: 22px;
+}
+
+.home_bar_rwd{
+    color: #fff;
+    font-size: 25px;
+    background-color: #E72D2D;
+    width: 45px;
+    height: 150px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 0 25px 0 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+    display: none;
+}
+
+.home_bar_rwd .rwd_home{
+    color: #fff;
+}
+
+.home_bar_rwd .rwd_love{
+    color: #fff;
+}
+
+.home_bar_rwd .rwd_user{
+    color: #fff;
+}
+
+ul.top{
+    display: flex;
+    padding-top: 50px;
+    z-index: 99;
+    position: fixed;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,0); /*這樣加入左邊百分比，以及translate就可以置中*/
+
+}
+
+.top_center{
+    display: flex;
+    margin: 0 auto;
+}
+
+.top_center li{
+    justify-content: space-between;
+    margin: 0 25px;
+}
+
+.top_center a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.top li a .f_logo{
+    background-image: url("../img/logo-escake.png");
+    background-position: center center;
+    background-size: contain;
+    width: 80px;
+    height: 113px;
+    z-index: 111;
+}
+
+/*--------------  聯名限定按鈕  --------------*/
+
+.top .ft_red{
+    font-size: 14px;
+    letter-spacing: 2px;
+    height: 25px;
+    line-height: 25px;
+    color: #E72D2D;
+    border: 1px solid #E72D2D;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+}
+
+.top .ft_red:hover{
+    color: #CDC3A7;
+    border: 1px solid #CDC3A7;
+}
+
+/*------------主選單 - 右邊--------------*/
+
+.top_right{
+    display: flex;
+    position: fixed;
+    right: 0;
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.top_right a{
+    text-decoration: none;
+    color: #fff;
+    /* margin:0 10px; */
+}
+
+.top_right i{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.searchsth{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top_right .searchline{
+    margin-right: 10px;
+    width: 50%;
+    border: 0;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 1px;
+    background-color: transparent; /*透明的背景*/
+}
+
+.top_right .searchline:focus{
+    outline: none;
+}
+
+/*--------------  rwd漢堡選單  --------------*/
+
+.burger{
+    display: none;
+}
+
+/*--------------  子選單設定  --------------*/
+
+.ai_main{
+    position: relative;
+}
+
+.ai_list{
+    background-color: #E72D2D;
+    align-content: center;
+    position: absolute;
+    left: -39px;
+    top: 30px;
+    display: none;
+    margin: 0;
+    width: 120px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.ai_list .ai_li{
+    font-size: 14px;
+    /* letter-spacing: 1px; */
+}
+
+li:hover .ai_list{
+    display: block;
+}
+
+.ai_li .ai_a{
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-decoration: none;
+    /* line-height: 2.8; */
+    color: #fff;
+}
+
+
+.ai_li .ai_a:hover{
+    color: #5e5e5e;
+    /* border: 1px solid #5e5e5e; */
+    /* border-bottom:1px solid #5e5e5e; */
+}
+
+/*----------     彈出購物車     ----------*/
+.addcart{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+    background-color: #CDC3A7;
+    z-index: 110;
+    padding-top: 3%;
+    right:-100%;
+    box-sizing: border-box;
+    position: fixed;
+    transition: .5s ease-in;
+}
+.addcart.active{
+    right:0%;
+}
+
+.addcart img{
+    margin-right: 10px;
+    /* width: 125px; */
+    border-radius: 0 20px 0 0;
+}
+
+.addcart li{
+    list-style-type: none;
+    text-align: right;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    width: auto;
+    padding-right: 20px;
+}
+
+/* .addcart li::after{
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: .5px;
+    position: relative;
+    position:absolute;
+    right: 0;
+    top: 11%
+} */
+
+.addcart a{
+    color: #fff;
+}
+
+.addcart ul{
+    display: flex;
+    color: #fff;
+    margin-top: 22px;
+    /* border-bottom: 1px solid #fff; */
+    width: 320px;
+    margin-right: 20px;
+    padding-left: 20px;
+
+    position: relative;
+}
+.addcart ul::after{
+    content: "";
+    display: block;
+    width: 340px;
+
+    position: absolute;
+    height: .5px;
+    background: #fff;
+
+    top: 125px;
+    left: 19px;
+}
+
+
+.addpd{
+    width: 100%;
+    padding-top: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.addpd h1{
+    margin-bottom: 10px;
+}
+
+.adddetail{
+    display: flex;
+    align-items: center;
+}
+
+.adddetail_1{
+    margin-right: 20px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.adddetail_1 h2{
+    margin-bottom: 5px;
+}
+
+.adddetail_1 h3{
+    margin-bottom: 5px;
+}
+
+.adddetail_2{
+    flex-direction: column;
+}
+
+.adddetail_2 p{
+    margin-bottom: 5px;
+}
+
+.addedit{
+    text-align: right;
+    width: 100%;
+    /* display: flex; */
+    /* border: 2px solid #5e5e5e; */
+}
+
+.adddetail_2 p{
+    border-radius: 3px;
+    justify-content: space-between;
+}
+
+.adddetail_2 .p_add1{
+    border: 1px solid #fff;
+    width: 20px;
+    padding-left: 4px;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.adddetail_2 .p_add2{
+    background-color: #fff;
+    color: #CDC3A7;
+    width: 30px;
+    height: 14px;
+    line-height: 14px;
+    padding-left: 4px;
+    font-size: 12px;
+}
+
+.adddetail_2 .p_add3{
+    background-color: #fff;
+    color: #CDC3A7;
+    height: 14px;
+    line-height: 14px;
+    width: 65px;
+    padding-left: 4px;
+    font-size: 12px;
+}
+
+.addedit a{
+    font-size: 16px;
+    /* margin-left: 5px; */
+    margin-right: 5px;
+}
+
+div.gopurchase{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+div.gopurchase .purchasebtn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 14px;
+    border-radius: 5px;
+    line-height: 30px;
+    height: 30px;
+    color: #CDC3A7;
+    background: #744343;
+    width: 340px;
+    position: relative;
+    border:none;
+}
+
+div.gopurchase .purchasebtn::after{
+    content: "";
+    width: 340px;
+    height: 1px;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    background-color: #744343;
+}
+
+
+
+
+
+
+/*--------------  品牌文案  --------------*/
+
+.slogan{
+    flex-wrap: wrap;
+    max-width: 55%;
+    color: #CDC3A7;
+    /* border: 2px solid #CDC3A7; */
+    text-shadow: 0 0 1.5px rgba(94, 94, 94, 1);
+    margin: 0 auto;
+    letter-spacing: 1px;
+    margin-top: 100px;
+}
+
+.slogan span{
+    font-size: 56px;
+}
+
+.slogan h1{
+    float: left;
+    font-size: 24px;
+    position: relative;
+}
+
+.slogan h2{
+    float: right;
+    font-size: 24px;
+    position: relative;
+}
+
+.slogan h1::before{
+    content: "";
+    height: 1px;
+    background: #CDC3A7;
+    width: 130px;
+    position: absolute;
+    left: -122px;
+    top: 44px;
+}
+
+.slogan h2::after{
+    content: "";
+    height: 1px;
+    background: #CDC3A7;
+    width: 130px;
+    position: absolute;
+    left: 322px;
+    top: 44px;
+}
+
+.slogan_ch p{
+    /* width: 55%; */
+    color: #fff;
+    font-size: 14px;
+    /* margin: 0 auto; */
+    clear: both;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.slogan_rwd{
+    display: none;
+}
+
+.readmore{
+    position: relative;
+}
+
+.readmore a{
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #CDC3A7;
+    border-radius: 7px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #E72D2D;
+    width: 110px;
+    margin: 0 auto;
+}
+
+.readmore a::after{
+    position: absolute;
+    left: 50%;
+    top: 43px;
+    transform: translate(-50%,0);
+    content: "";
+    height: 1px;
+    background: #E72D2D;
+    width: 107px;
+}
+
+.readmore a:hover{
+    color: #fff;
+    border-radius: 7px;
+    line-height: 43px;
+    text-align: center;
+    background-color: #CDC3A7;
+    width: 110px;
+    font-size: 15.5px;
+}
+
+.readmore:hover a::after { /*滑鼠碰到按鈕時，A的after會執行的事情*/
+    color: #fff;
+    border-radius: 7px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #CDC3A7;
+    width: 110px;
+    font-size: 15.5px;
+}
+
+/*--------------  小吧檯 活動資訊  --------------*/
+.bar_text{
+    width: 100%;
+    background-color: #E72D2D;
+    text-align: center;
+}
+.bar_text a{
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.bar_text_rwd{
+    display: none;
+}
+
+/*--------------  熱銷搖滾區(文字)  --------------*/
+
+.hot_items{
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+.number{
+
+}
+
+.number-center{
+        margin-top: 35px;
+        color: #CDC3A7;
+        width: 30px;
+        height: 30px;
+        margin:auto;
+        line-height: 30px;
+        font-size: 25px;
+        border: 1.5px solid #CDC3A7;
+        border-radius: 10px; 
+}
+
+.i_name{
+    color: #5e5e5e;
+    margin-top: 15px;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.hot_items p{
+    color: #5e5e5e;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/*--------------  熱銷搖滾區(圖片)  --------------*/
+
+.item_look{
+    background-image: url("../img/index/wood1.png");
+    max-width: auto;
+    background-size: cover;
+    position: relative;
+    /* border: 1px solid #5e5e5e; */
+    overflow: hidden;
+    margin-bottom: 250px;
+}
+
+.item_look .spot{
+    width: 100%;
+    display: block;
+}
+
+.berrycup{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.item_look .spot_rwd{
+    display: none;
+}
+
+.berrycup_rwd{
+    display: none;
+}
+
+.item_look .hot_items_rwd{
+    display: none;
+}
+
+/*---------------莓果視覺畫面--------------*/
+
+.visual_made{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.visual_made h1{
+    color: #5e5e5e;
+    font-size: 48px;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+.visual_made p{
+    max-width: 40%;
+    margin: 0 auto;
+    /* border: 1px solid #E72D2D; */
+    color: #5e5e5e;
+    font-size: 15px;
+    letter-spacing: 15px;
+    position: relative;
+}
+
+.visual_made_wrap{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.close-up{
+    width: 20%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+
+.medium-shot{
+    width: 35%;
+    position: absolute;
+    left: -70px;
+    bottom: 130px;
+}
+
+.long-shot{
+    width: 25%;
+    position: absolute;
+    right: -65px;
+    top: -70px;
+}
+
+.visual_cake_rwd{
+    display: none;
+}
+
+/*---------------客製蛋糕按鈕--------------*/
+
+.btn{
+    margin-top: 100px;
+    position: relative;
+}
+
+.btn .btn_create{
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #CDC3A7;
+    border-radius: 7px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #E72D2D;
+    width: 110px;
+    margin: 0 auto;
+}
+
+.btn .btn_create::after{
+    position: absolute;
+    left: 50%;
+    top:32px;
+    transform: translate(-50%,0);
+    content: "";
+    height: 1px;
+    background: #E72D2D;
+    width: 107px;
+}
+
+.btn .btn_create:hover{
+    color: #fff;
+    border-radius: 7px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #CDC3A7;
+    width: 110px;
+    font-size: 15.5px;
+}
+
+.btn .btn_create:hover::after { /*滑鼠碰到按鈕時，A的after會執行的事情*/
+    color: #fff;
+    border-radius: 7px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #CDC3A7;
+    width: 110px;
+    font-size: 15.5px;
+}
+
+
+
+
+
+
