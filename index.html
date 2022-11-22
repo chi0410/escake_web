@@ -47,7 +47,7 @@
                     <li class="searchsth"><p><i class="fa-solid fa-magnifying-glass search"></i></p>
                         <input class="searchline" type="text" ></li>
                     <li><a href="olduser.html"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="atcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping pc_cart"></i></a></li>
                     </div>
                 </ul>
             </div>
@@ -289,6 +289,11 @@
 
             
             $(".rwd_cart").on("click", function(){
+                console.log("qwert")
+                $(".addcart").toggleClass("active")
+            })
+
+            $(".pc_cart").on("click", function(){
                 console.log("qwert")
                 $(".addcart").toggleClass("active")
             })
