@@ -1,6 +1,7 @@
 .footer_bg{
     width: 100%;
-    background-image: url("/img/footer/all_berry_f.png");
+    /* background-image: url("/img/footer/all_berry_f.png"); */
+    background-image: url("../img/footer/all_berry_f.png");
     /* padding-bottom: 100%; */
     height: 76.51vw;
     margin-top: 150px;
