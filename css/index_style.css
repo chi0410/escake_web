@@ -10,7 +10,7 @@ body{
 .main{
     width: 100%;
     /* background-attachment: fixed; */
-    background-image: url(../img/index/index_top.png);
+    background-image: url("../img/index/index_top.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-size: cover;
@@ -233,10 +233,10 @@ li:hover .ai_list{
 
 /*----------     彈出購物車     ----------*/
 .addcart{
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    /* right: 0; */
     width: 380px;
     background-color: #CDC3A7;
     z-index: 110;
@@ -303,7 +303,6 @@ li:hover .ai_list{
     top: 125px;
     left: 19px;
 }
-
 
 .addpd{
     width: 100%;

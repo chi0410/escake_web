@@ -54,10 +54,12 @@ body{
 
 .wrap .rwd_search{
     display: block;
+    margin-top: -32px;
 }
 
 .wrap .rwd_cart{
     display: block;
+    margin-top: -32px;
     margin-left: 20px;
 }
 
